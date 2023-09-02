@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nesty</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #F0F8FF;
+        font-family: 'Arial', sans-serif;
+        width: 400px;
+        margin: auto;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 3px;
+
+      }
+      textarea#memo {
+        width: 90%;
+        min-height: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      textarea#memo:focus {
+        outline: none;  /* 파란색 테두리를 제거합니다 */
+        /* 원한다면 다른 스타일을 추가할 수 있습니다, 예를 들면: */
+        border-color: #ccc;
+}
+
+
+      button#save {
+        float: right;  /* 버튼을 오른쪽으로 몰아넣습니다 */
+        padding: 8px 12px;  /* 패딩을 조금 줄입니다 */
+        margin-top: 5px;
+        margin-bottom: 10px;
+        background-color: #07422d;
+        color: white;
+        border: none;
+        border-radius: 4px;  /* 모서리를 둥글게 만듭니다 */
+        font-size: 16px;  /* 글씨 크기를 줄입니다 */
+        cursor: pointer;  /* 마우스 커서를 포인터로 설정 */
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <textarea id="memo" placeholder="Enter your memo here"></textarea>
+      <button id="save">Save</button>
+    </div>
+  </body>
+  <script src="popup.js"></script>
+</html>
