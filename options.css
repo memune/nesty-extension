@@ -13,7 +13,10 @@ body {
   ul#memoList {
     list-style: none;
     padding-left: 0;
+    max-width: 70%;  /* 부모 요소의 가로 너비의 80% */
+    margin: 0 auto; /* 가운데 정렬 */
   }
+  
   
   li.memo-item {
     width: 100%; 
@@ -30,7 +33,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    white-space: pre-wrap;
   }
+
+  
   
   li.memo-item div.single-memo {
     display: flex;
